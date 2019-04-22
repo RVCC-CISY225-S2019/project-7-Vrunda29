@@ -1,0 +1,18 @@
+header,
+.form-container,
+footer,
+a[href="#"]
+{
+    display: none;
+}
+*,
+*:before,
+*:after,
+*:first-letter;
+p:first-line;
+div:first-line;
+blackquote:first-line;
+li:first-line{
+    color: #000 !important;
+    background:transparent !important;
+}

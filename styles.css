@@ -59,7 +59,9 @@ main {
 .gallery {
     display: grid;
 }
-
+figure{
+    display: grid;
+}
 /*  article */
 
 article {
@@ -88,40 +90,41 @@ footer {
     /*      hero content &	about content */
 
     .content {
-        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .content picture,
     .content p {
         grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
     }
 
     .mobile-first {
         display: none;
     }
-
-    /*	gallery */
-    .gallery {
-        grid-template-columns: 1fr 20fr 1fr;
+/* Gallery*/
+    .gallery{
+        grid-template-columns: 1fr 6fr 1fr; 
     }
-
     .gallery h3,
-    .gallery figure {
+    .gallery figure{
         grid-column: 2/3;
         align-self: center;
         justify-self: center;
+        
     }
 
     /* figure inside gallery */
     figure {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         align-items: center;
         justify-items: center;
     }
 
     /*	article */
     article {
-        grid-template-columns: 1fr 48ch 1fr;
+        grid-template-columns: 1fr 48rem 1fr;
     }
 
     article h1,
@@ -166,7 +169,7 @@ footer {
 
     /*	gallery */
     .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 4.5fr 2.5fr 4fr;
     }
 
     .gallery h3 {
@@ -175,7 +178,7 @@ footer {
 
     .gallery figure {
         grid-column: auto;
-        margin: 0;
+        
     }
 
 
