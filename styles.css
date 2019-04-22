@@ -1,0 +1,189 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+normal {
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+legend {
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 1.5px;
+}
+
+input:focus,
+textarea:focus {
+    overflow: inherit;
+    color: black;
+    width: auto;
+    height: auto;
+}
+
+/*  grids */
+
+main {
+    display: grid;
+}
+
+/* hero content */
+
+.content {
+    display: grid;
+}
+
+/* about content */
+
+.about-content {
+    display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+    display: grid;
+}
+
+/*  article */
+
+article {
+    display: grid;
+}
+
+/* form container */
+.form-container {
+    display: grid;
+}
+
+/* footer */
+
+footer {
+    display: grid;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+    /*      hero content &	about content */
+
+    .content {
+        grid-template-columns: 1fr 8fr 1fr;
+    }
+
+    .content picture,
+    .content p {
+        grid-column: 2/3;
+    }
+
+    .mobile-first {
+        display: none;
+    }
+
+    /*	gallery */
+    .gallery {
+        grid-template-columns: 1fr 20fr 1fr;
+    }
+
+    .gallery h3,
+    .gallery figure {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    /* figure inside gallery */
+    figure {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    /*	article */
+    article {
+        grid-template-columns: 1fr 48ch 1fr;
+    }
+
+    article h1,
+    .story-body {
+        grid-column: 2/3;
+    }
+
+    article h1 {
+        align-self: center;
+        justify-self: center;
+    }
+
+
+    /*	form */
+    .form-container {
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+
+    .form-container h1,
+    .form-container form {
+        grid-column: 2/3;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    .form-container h1 {
+        align-self: center;
+        justify-self: center;
+    }
+
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+    /*      hero content */
+
+    /*	about content */
+
+    /*	gallery */
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery h3 {
+        grid-column: 1/4;
+    }
+
+    .gallery figure {
+        grid-column: auto;
+        margin: 0;
+    }
+
+
+    .gallery figcaption {
+        margin-left: 2rem;
+    }
+
+    /*	article */
+
+    /*	form */
+}

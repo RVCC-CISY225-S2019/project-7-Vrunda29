@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- skip link -->
+    <a href="#main" class="skip">Skip to main</a>
+    <!-- start of header -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i id="symbol-toggle" class="fas fa-bars"></i>
+            </span>
+            <a href="#header" class="logo">
+                <div class="logo-container">
+                    <img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
+                    <h1 class="page-title">Web Dev I</h1>
+                </div>
+            </a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#main" class="nav-links">Main</a>
+                </li>
+                <li>
+                    <a href="#about-me" class="nav-links">About Me</a>
+                </li>
+                <li>
+                    <a href="#pictures" class="nav-links">My Photos</a>
+                </li>
+                <li>
+                    <a href="#story" class="nav-links">A Story</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-links">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end of header -->
+    <!-- start of main content -->
+    <!--    why put tabindex of -1 on skiplink target -  https://axesslab.com/skip-links/ -->
+    <main id="main" tabindex="-1" class="main">
+        <!-- start of bio section -->
+        <section class="hero">
+            <div class="content">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/me-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/me-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/me-small.jpg">
+                    <img class="my-picture" src="images/me-xsmall.jpg" alt="This is a picture of me">
+                </picture>
+                <p class="my-name">Vrunda Patel</p>
+                <p class="my-location">Somerset, NJ</p>
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
+            <div class="content">
+                
+                    <p class="iama">I want to be...</p>
+                    <p class="my-info">a web developer master!</p>
+                    <p class="iama">My hobby is....</p>
+                    <p class="my-info">dancing and learn more about new stuff.</p>
+                    <p class="iama">In my free time, I like to...</p>
+                    <p class="my-info"> watch reality shows.</p>
+
+                </div>
+            
+        </section>
+
+        <!-- end of bio section -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <!-- start of photo gallery -->
+        <section id="pictures" class="gallery">
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/1-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/1-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/1-small.jpg">
+                    <img src="images/1-xsmall.jpg" alt="web picture">
+                </picture>
+                <figcaption>
+                    web picture
+                </figcaption>
+            </figure>
+            <hr>
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/2-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/2-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/2-small.jpg">
+                    <img src="images/2-xsmall.jpg" alt="web picture">
+                </picture>
+                <figcaption>
+                    web picture
+                </figcaption>
+            </figure>
+            <hr>
+            <figure>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/3-lrg.jpg">
+                    <source media="(min-width: 960px)" srcset="images/3-med.jpg">
+                    <source media="(min-width: 640px)" srcset="images/3-small.jpg">
+                    <img src="images/3-xsmall.jpg" alt="web picture">
+                </picture>
+                <figcaption>
+                    web picture
+                </figcaption>
+            </figure>
+        </section>
+        <!-- end of photo gallery -->
+        <div class="back-to-top">
+            <a href="#">Back to Top</a>
+        </div>
+        <hr class="mobile-first">
+        <!-- start of Sherlock Holmes story -->
+        <article id="story" class="story">
+            <h1>Lit Ipsum</h1>
+
+            <p>"He shot one of his suspicious looks at me. 'Perhaps we had better proceed to business, then,' said he. 'Mr. Ferguson and I will take you up to see the machine.'</p>
+
+            <p>"'I had better put my hat on, I suppose.'</p>
+
+            <p>"'Oh, no, it is in the house.'</p>
+
+            <p>"'What, you dig fuller's-earth in the house?'</p>
+
+            <p>"'No, no. This is only where we compress it. But never mind that. All we wish you to do is to examine the machine and to let us know what is wrong with it.'</p>
+
+            <p>"We went upstairs together, the colonel first with the lamp, the fat manager and I behind him. It was a labyrinth of an old house, with corridors, passages, narrow winding staircases, and little low doors, the thresholds of which were hollowed out by the generations who had crossed them. There were no carpets and no signs of any furniture above the ground floor, while the plaster was peeling off the walls, and the damp was breaking through in green, unhealthy blotches. I tried to put on as unconcerned an air as possible, but I had not forgotten the warnings of the lady, even though I disregarded them, and I kept a keen eye upon my two companions. Ferguson appeared to be a morose and silent man, but I could see from the little that he said that he was at least a fellow-countryman.</p>
+
+            <p>"Colonel Lysander Stark stopped at last before a low door, which he unlocked. Within was a small, square room, in which the three of us could hardly get at one time. Ferguson remained outside, and the colonel ushered me in.</p>
+
+            <p>"'We are now,' said he, 'actually within the hydraulic press, and it would be a particularly unpleasant thing for us if anyone were to turn it on. The ceiling of this small chamber is really the end of the descending piston, and it comes down with the force of many tons upon this metal floor. There are small lateral columns of water outside which receive the force, and which transmit and multiply it in the manner which is familiar to you. The machine goes readily enough, but there is some stiffness in the working of it, and it has lost a little of its force. Perhaps you will have the goodness to look it over and to show us how we can set it right.'</p>
+
+            <p>"I took the lamp from him, and I examined the machine very thoroughly. It was indeed a gigantic one, and capable of exercising enormous pressure. When I passed outside, however, and pressed down the levers which controlled it, I knew at once by the whishing sound that there was a slight leakage, which allowed a regurgitation of water through one of the side cylinders. An examination showed that one of the india-rubber bands which was round the head of a driving-rod had shrunk so as not quite to fill the socket along which it worked. This was clearly the cause of the loss of power, and I pointed it out to my companions, who followed my remarks very carefully and asked several practical questions as to how they should proceed to set it right. When I had made it clear to them, I returned to the main chamber of the machine and took a good look at it to satisfy my own curiosity. It was obvious at a glance that the story of the fuller's-earth was the merest fabrication, for it would be absurd to suppose that so powerful an engine could be designed for so inadequate a purpose. The walls were of wood, but the floor consisted of a large iron trough, and when I came to examine it I could see a crust of metallic deposit all over it. I had stooped and was scraping at this to see exactly what it was when I heard a muttered exclamation in German and saw the cadaverous face of the colonel looking down at me.</p>
+
+            <p>"'What are you doing there?' he asked.</p>
+
+            <p>"I felt angry at having been tricked by so elaborate a story as that which he had told me. 'I was admiring your fuller's-earth,' said I; 'I think that I should be better able to advise you as to your machine if I knew what the exact purpose was for which it was used.'
+            </p>
+            <p>"The instant that I uttered the words I regretted the rashness of my speech. His face set hard, and a baleful light sprang up in his grey eyes.</p>
+
+            <p>"'Very well,' said he, 'you shall know all about the machine.' He took a step backward, slammed the little door, and turned the key in the lock. I rushed towards it and pulled at the handle, but it was quite secure, and did not give in the least to my kicks and shoves. 'Hullo!' I yelled. 'Hullo! Colonel! Let me out!'</p>
+
+            <p>"And then suddenly in the silence I heard a sound which sent my heart into my mouth. It was the clank of the levers and the swish of the leaking cylinder. He had set the engine at work. The lamp still stood upon the floor where I had placed it when examining the trough. By its light I saw that the black ceiling was coming down upon me, slowly, jerkily, but, as none knew better than myself, with a force which must within a minute grind me to a shapeless pulp. I threw myself, screaming, against the door, and dragged with my nails at the lock. I implored the colonel to let me out, but the remorseless clanking of the levers drowned my cries. The ceiling was only a foot or two above my head, and with my hand upraised I could feel its hard, rough surface. Then it flashed through my mind that the pain of my death would depend very much upon the position in which I met it. If I lay on my face the weight would come upon my spine, and I shuddered to think of that dreadful snap. Easier the other way, perhaps; and yet, had I the nerve to lie and look up at that deadly black shadow wavering down upon me? Already I was unable to stand erect, when my eye caught something which brought a gush of hope back to my heart.</p>
+
+            <p>"I have said that though the floor and ceiling were of iron, the walls were of wood. As I gave a last hurried glance around, I saw a thin line of yellow light between two of the boards, which broadened and broadened as a small panel was pushed backward. For an instant I could hardly believe that here was indeed a door which led away from death. The next instant I threw myself through, and lay half-fainting upon the other side. The panel had closed again behind me, but the crash of the lamp, and a few moments afterwards the clang of the two slabs of metal, told me how narrow had been my escape.
+            </p>
+            <p>"I was recalled to myself by a frantic plucking at my wrist, and I found myself lying upon the stone floor of a narrow corridor, while a woman bent over me and tugged at me with her left hand, while she held a candle in her right. It was the same good friend whose warning I had so foolishly rejected.</p>
+        </article>
+        <!-- end of Sherlock Holmes story -->
+    </main>
+    <!-- end of main content -->
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <hr class="mobile-first">
+    <section id="contact" class="form-container">
+        <h1> Get in touch </h1>
+        <form method="post" action="https://formspree.io/pvrund29@gmail.com">
+            <fieldset>
+                <legend> Please Feel Free to Contact me anytime</legend>
+
+                <label for="email">Email</label>
+                <br>
+                <input id="email" type="email">
+                <br><br><br>
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" name="Message"></textarea>
+
+                <br><br>
+                <fieldset>
+                    <legend><label id="yes_no_radio">I would like a reply</label></legend>
+                    <br><br><input type="radio" name="yes_no" checked>Yes
+                    <br><br><input type="radio" name="yes_no" checked>No
+                </fieldset>
+                <br>
+                <button type="submit">Send Test</button>
+
+            </fieldset>
+        </form>
+    </section>
+    <!-- end of contact form -->
+    <!-- start of footer -->
+    <footer>
+        <br class="mobile-first"><br class="mobile-first">
+        Copyright &copy; 2019 Vrunda Patel
+    </footer>
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+    <!-- end of footer -->
+    <br class="mobile-first"><br class="mobile-first">
+    <!-- start of javascript for nav toggle -->
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+        let symbolToggle = document.getElementById('symbol-toggle');
+
+
+        navBarToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            if (symbolToggle.classList.contains('fa-bars')) {
+                symbolToggle.classList.remove('fa-bars');
+                symbolToggle.classList.add('fa-times');
+            } else {
+                symbolToggle.classList.remove('fa-times');
+                symbolToggle.classList.add('fa-bars');
+            }
+        });
+
+    </script>
+    <!-- end of javascript for nav toggle -->
+</body>
+
+</html>
