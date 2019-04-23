@@ -1,82 +1,84 @@
 body {
-    font-family: 'Merriweather', serif;
+	font-family: 'Merriweather', serif;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 normal {
-    font-style: normal;
+	font-style: normal;
 }
 
 h1 {
-    font-size: 2.5em;
-    font-weight: bold;
+	font-size: 2.5em;
+	font-weight: bold;
 }
 
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
 legend {
-    color: black;
-    font-size: 1.4em;
-    font-weight: bold;
-    padding: 1.5px;
+	color: black;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 1.5px;
 }
 
 input:focus,
 textarea:focus {
-    overflow: inherit;
-    color: black;
-    width: auto;
-    height: auto;
+	overflow: inherit;
+	color: black;
+	width: auto;
+	height: auto;
 }
 
 /*  grids */
 
 main {
-    display: grid;
+	display: grid;
 }
 
 /* hero content */
 
 .content {
-    display: grid;
+	display: grid;
 }
 
 /* about content */
 
 .about-content {
-    display: grid;
+	display: grid;
 }
 
 /*  gallery */
 
 .gallery {
-    display: grid;
+	display: grid;
 }
-figure{
-    display: grid;
+
+figure {
+	display: grid;
 }
+
 /*  article */
 
 article {
-    display: grid;
+	display: grid;
 }
 
 /* form container */
 .form-container {
-    display: grid;
+	display: grid;
 }
 
 /* footer */
 
 footer {
-    display: grid;
+	display: grid;
 }
 
 /*  layout */
@@ -87,75 +89,78 @@ footer {
 
 @media screen and (min-width: 48rem) {
 
-    /*      hero content &	about content */
+	/*      hero content &	about content */
 
-    .content {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+	.content {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 
-    .content picture,
-    .content p {
-        grid-column: 2/3;
-        align-self: center;
-        justify-self: center;
-    }
+	.content picture,
+	.content p,
+	.about-content {
+		grid-column: 2/3;
+		align-self: center;
+		justify-self: center;
+	}
 
-    .mobile-first {
-        display: none;
-    }
-/* Gallery*/
-    .gallery{
-        grid-template-columns: 1fr 6fr 1fr; 
-    }
-    .gallery h3,
-    .gallery figure{
-        grid-column: 2/3;
-        align-self: center;
-        justify-self: center;
-        
-    }
+	.mobile-first {
+		display: none;
+	}
 
-    /* figure inside gallery */
-    figure {
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-items: center;
-    }
+	/* Gallery*/
+	.gallery {
+		grid-template-columns: 1fr 6fr 1fr;
+	}
 
-    /*	article */
-    article {
-        grid-template-columns: 1fr 48rem 1fr;
-    }
+	.gallery h3,
+	.gallery figure {
+		grid-column: 2/3;
+		align-self: center;
+		justify-self: center;
 
-    article h1,
-    .story-body {
-        grid-column: 2/3;
-    }
+	}
 
-    article h1 {
-        align-self: center;
-        justify-self: center;
-    }
+	/* figure inside gallery */
+	figure {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+	}
+
+	/*	article */
+	article {
+		grid-template-columns: 1fr 48rem 1fr;
+	}
+
+	article h1,
+	.story-body {
+		grid-column: 2/3;
+	}
+
+	article h1 {
+		align-self: center;
+		justify-self: center;
+	}
 
 
-    /*	form */
-    .form-container {
-        grid-template-columns: 1fr 4fr 1fr;
-    }
+	/*	form */
+	.form-container {
+		grid-template-columns: 1fr 48rem 1fr;
+	}
 
-    .form-container h1,
-    .form-container form {
-        grid-column: 2/3;
-    }
+	.form-container h1,
+	.form-container form {
+		grid-column: 2/3;
+	}
 
-    form {
-        margin: 0;
-    }
+	form {
+		margin: 0;
+	}
 
-    .form-container h1 {
-        align-self: center;
-        justify-self: center;
-    }
+	.form-container h1 {
+		align-self: center;
+		justify-self: center;
+	}
 
 }
 
@@ -163,30 +168,30 @@ footer {
 
 @media screen and (min-width: 64rem) {
 
-    /*      hero content */
+	/*      hero content */
 
-    /*	about content */
+	/*	about content */
 
-    /*	gallery */
-    .gallery {
-        grid-template-columns: 4.5fr 2.5fr 4fr;
-    }
+	/*	gallery */
+	.gallery {
+		grid-template-columns: 4.5fr 2.5fr 4fr;
+	}
 
-    .gallery h3 {
-        grid-column: 1/4;
-    }
+	.gallery h3 {
+		grid-column: 1/4;
+	}
 
-    .gallery figure {
-        grid-column: auto;
-        
-    }
+	.gallery figure {
+		grid-column: auto;
+
+	}
 
 
-    .gallery figcaption {
-        margin-left: 2rem;
-    }
+	.gallery figcaption {
+		margin-left: 2rem;
+	}
 
-    /*	article */
+	/*	article */
 
-    /*	form */
+	/*	form */
 }
